@@ -4,6 +4,9 @@ import ListHeading from './ListHeading';
 import SearchBox from './SearchBox';
 import ListMovie from './ListMovie';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
+
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
   const [toSearch, setToSearch] = useState('');
@@ -66,6 +69,9 @@ const HomePage = () => {
           >
             Log Out
           </button>
+          <div onClick={() => {navigate('/profile')}}>
+          <FontAwesomeIcon icon={faUser} size="lg" />
+          </div>
         </div>{" "}
 
       </div>

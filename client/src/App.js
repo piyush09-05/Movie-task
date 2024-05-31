@@ -9,6 +9,7 @@ import HomePage from './components/home';
 import LoginPage from './components/login';
 import Signup from './components/signup';
 import Details from './components/details';
+import Profile from './components/Profile';
 
 import {
     createBrowserRouter,
@@ -51,6 +52,15 @@ const App = () =>{
                 <div>
                     <Details />
                 </div>
+            )
+        },
+        {
+            path:"/profile",
+            element:(
+                <div>
+                    <Profile />
+                </div>
+
             )
         }
     ])
